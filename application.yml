@@ -1,0 +1,14 @@
+server:
+  port: 8900
+eureka:
+  client:
+    service-url:
+      defaultZone: http://47.105.171.20:1111/eureka,http://47.105.171.20:1112/eureka
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:liuqiao132/myRepositor.git
